@@ -11,7 +11,7 @@ collections:
   - community.docker
 
 roles:
-  - src: https://github.com/namelivia/itemtree-client-ansible-role
+  - src: https://github.com/namelivia/namelivia.itemtree
 ```
 
 ## Required variables
