@@ -1,4 +1,4 @@
-# Itemtree client Ansible role
+# Itemtree client Ansible role [![Ansible Lint](https://github.com/namelivia/ansible-itemtree-client/actions/workflows/ansible-lint.yml/badge.svg)](https://github.com/namelivia/ansible-itemtree-client/actions/workflows/ansible-lint.yml)
 
 ## This is a WIP
 
