@@ -15,6 +15,5 @@ roles:
 ```
 
 ## Required variables
- - `cloudwatch_region` Cloudwatch region to send the logs to.
- - `cloudwatch_log_group` Cloudwatch log group to send the logs to.
+ - `loki_url` Loki endpoint to send logs.
  - `itemtree_api_endpoint` API endpoint for connecting the client to the server API.
