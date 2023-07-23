@@ -5,6 +5,7 @@
       - application_name is defined
       - loki_url is defined
       - itemtree_api_endpoint is defined
+      - host_port is defined
 
 - name: Create app container
   docker_container:
@@ -20,10 +21,9 @@
       loki-batch-size: "400"
     exposed_ports:
       - "80"
+    published_ports:
+      - "0.0.0.0:{{ host_port }}:80"
     networks:
       - name: "pomerium"
     env:
       VUE_APP_API_ENDPOINT: "{{ itemtree_api_endpoint }}"
-      VIRTUAL_HOST: "{{ domain_name }}"
-      VIRTUAL_PATH: "/"
-      VIRTUAL_PORT: "80"
